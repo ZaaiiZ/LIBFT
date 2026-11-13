@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: adallari <adrien.allaria@42.learner.tec    +#+  +:+       +#+        */
+/*   By: adallari <adrien.allaria@learner.42.tec    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/11/02 18:24:24 by adrienallar       #+#    #+#             */
-/*   Updated: 2026/11/06 17:17:08 by adallari         ###   ########.fr       */
+/*   Updated: 2026/11/13 16:21:41 by adallari         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ char	*ft_strnstr(const char *h, const char *n, size_t len)
 	while (*h && len >= len_needle)
 	{
 		if (!ft_strncmp(h, n, len_needle))
-		return ((char *)h);
+			return ((char *)h);
 		len--;
 		h++;
 	}
